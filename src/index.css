@@ -50,13 +50,13 @@ table, td, th {
     font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100%;
 }
+
 td {
     padding: 15px 15px;
     vertical-align: middle;
-    /* text-align: left; */
-  }
+}
 
-  thead {
+thead {
     font-size: 14px;
     line-height: 24px;
     font-family: Lato;
@@ -69,7 +69,7 @@ td {
   
     color: rgba(51, 51, 51, .5);
     background: rgba(255, 255, 255, .9);
-  }
+} 
 th, td {
     cursor: pointer;
     padding: 15px;
@@ -79,27 +79,27 @@ th, td {
 }
 tr {
     overflow-x: scroll;
-  }
+}
 
-  thead tr th {
+thead tr th {
     padding: 15px 15px;
     border: 1px solid transparent;
-  
-  
+
+
     text-align: left;
-  }
-  tbody {
+}
+tbody {
     max-width: 100%;
-  }
-  tbody tr:nth-child(odd) {
+}
+tbody tr:nth-child(odd) {
     background: #f0f0f2;
-  }
-  tbody tr:hover {
+}
+tbody tr:hover {
     background: #f0f0f2;
-  }
-  td {
+}
+td {
     padding: 15px 15px;
-  }
+}
 .tableContainer {
     overflow-x:auto;
     width: 50%;
@@ -119,8 +119,8 @@ tr {
   border: 1px solid #ddd;
 }
 
-.pagination span.active {
-  background-color: #0099FF;
-  color: white;
-  border: 1px solid #0099FF;
+#pagiantionClick:hover {
+    background-color: #0099FF;
+    border: 1px solid #0099FF;
 }
+
