@@ -35,6 +35,12 @@ export default function Table(table) {
   //change page
   const paginate = numberSelected => setactivePage(numberSelected)
 
+  const isTable = () => {
+    if(table.items === undefined)
+      return 20
+    return table.items.length
+  }
+
   return (
     <div className="tableContainer">
       <table >
@@ -50,7 +56,7 @@ export default function Table(table) {
                 Watchers
               </th>
               <th>
-                Creation date
+                Creation-date
               </th>
           </tr>
         </thead>
@@ -58,7 +64,7 @@ export default function Table(table) {
             {getRows(table, entriesPerPage, activePage)}
         </tbody>
       </table>  
-      <Pagination reposPerPage={entriesPerPage} totalRepos={100} paginate={paginate}/>
+      <Pagination reposPerPage={entriesPerPage} totalRepos={isTable()} paginate={paginate}/>
     </div>
     
     
